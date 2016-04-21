@@ -1,4 +1,5 @@
 names(mtcars)
+dim(mtcars)
 test <- t.test(mpg ~ am, data= mtcars, var.equal = FALSE, paired=FALSE ,conf.level = .95)
 result <- data.frame( "t-statistic"  = test$statistic, 
                       "df" = test$parameter,
